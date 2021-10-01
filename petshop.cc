@@ -35,6 +35,50 @@ typedef struct animal
 
 } animal;
 
+int animais(){
+  int opc;
+
+  printf("[1] - Cadastrar Animais\n[2] - Buscar Animal\n[3] - Atualizar Animal\n[4] - Cadastrar Diagnostico\n[5] - Consultar Diagnostico\n[6] - Listar Ultimos Diagnosticos Cadastrados\n[7] - Animal mais antigo\nOpcao: ");
+  scanf("%d", &opc);
+
+  switch (opc)
+  {
+  case 1:
+    cadastroAnimal();
+    break;
+
+    case 2:
+    /* code */
+    break;
+
+    case 3:
+    /* code */
+    break;
+
+    case 4:
+    /* code */
+    break;
+
+    case 5:
+    /* code */
+    break;
+
+    case 6:
+    /* code */
+    break;
+
+    case 7 :
+    /* code */
+    break;
+      
+  default:
+    printf("!!!Opcao Invalida!!!");
+    break;
+  }
+
+
+}
+
 struct animal bicho;
 
 int cadastroAnimal(){
@@ -61,7 +105,13 @@ int cadastroAnimal(){
   {
     printf("\nParabens, seu animal foi cadastrado com sucesso!\n");
   }
+  system("pause");
+  return menu();
+}
 
+int buscarAnimal(){
+  
+  system("pause");
   return menu();
 }
 
